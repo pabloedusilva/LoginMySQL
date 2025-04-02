@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            height: auto;
+            border-radius: 15px;
+            width: auto;
+        }
+        fieldset {
+            border: 3px solid rgb(20, 147, 220);
+            border-radius: 15px;
+
+        }
+        legend {
+            border: 1px solid rgb(20, 147, 220);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(20, 147, 220);
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+            padding: 10px;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            font-size: 15px;
+            width: 100%;
+            color: white;
+        }
+        input[type="date"] {
+        background-color: white;
+        color: black;
+        border: none;
+        display: flex;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        outline: none;
+        width: 70%;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(20, 147, 220);
+            border: none;
+            color: white;
+            padding: auto;
+            height: 30px;
+            margin-top: 5%;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: rgb(0, 102, 255);
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulário de Clientes</legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" id="Nome" name="Nome"
+                            class="inputUser" required placeholder=" ">
+                        <label for="Nome">Nome Completo</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" id="Email" name="Email"
+                            class="inputUser" required placeholder=" ">
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" id="Telefone" name="Telefone"
+                            class="inputUser" required placeholder=" ">
+                        <label for="Telefone">Telefone</label>
+                    </div>
+                    <p>Sexo</p>
+                    <input type="radio" id="feminino" name="genero"
+                        value="feminino" required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" id="masculino" name="genero"
+                        value="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <div class="inputBox">
+                        <input type="date" id="data_nascimento"
+                            name="data_nascimento" class="inputUser" required>
+                        <label for="data_nascimento">Data de Nascimento</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="cidade" name="cidade"
+                            class="inputUser" required placeholder=" ">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="estado" name="estado"
+                            class="inputUser" required placeholder=" ">
+                        <label for="estado">Estado</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="endereco" name="endereco"
+                            class="inputUser" required placeholder=" ">
+                        <label for="endereco">Endereço</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+
+</html>
